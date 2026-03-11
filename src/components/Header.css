@@ -1,0 +1,134 @@
+.header {
+  background-color: #ffffff;
+  border-radius: 70px;
+  margin: 18px;
+  padding: 0 32px;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  gap: 16px;
+  height: 72px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #072635;
+  
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+  
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 41px;
+  text-decoration: none;
+  color: #072635;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: #f6f6f6;
+}
+
+.nav-item.active {
+  background-color: #01F0D0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.nav-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-name {
+  font-size: 14px;
+}
+
+.user-role {
+  font-size: 14px;
+  color: #707070;
+}
+
+.settings-btn,
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.settings-btn:hover,
+.menu-btn:hover {
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 10px;
+    padding: 0 16px;
+    border-radius: 16px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .user-info {
+    display: none;
+  }
+}

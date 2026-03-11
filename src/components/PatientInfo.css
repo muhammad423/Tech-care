@@ -1,0 +1,181 @@
+.patient-info-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.patient-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.patient-name {
+  text-align: center;
+}
+
+.card-title-24pt {
+  font-size: 24px;
+  font-weight: 800;
+  color: #072635;
+}
+
+.patient-details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.detail-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+
+}
+
+.detail-icon {
+  font-size: 40px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #F6F7F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: #072635;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 14px;
+  color: #072635;
+  font-weight: 700;
+}
+
+.body-regular-14 {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.body-emphasized-14pt {
+  font-weight: 700;
+}
+
+.show-all-btn {
+  /* display: flex; */
+  width: 250px;
+  padding: 12px;
+  background-color: #00d9bb;
+  border: none;
+  border-radius: 41px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #072635;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 10px 15%;
+}
+
+/* .show-all-btn:hover {
+ 
+} */
+
+.lab-results-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.lab-results-list {
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  max-height: 280px;
+}
+
+.lab-results-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.lab-results-list::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+
+.lab-results-list::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+}
+
+.lab-results-list::-webkit-scrollbar-thumb:hover {
+  background: #2d2d2d;
+}
+
+.lab-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  margin: 0 4px;
+  gap: 27px;
+}
+
+.lab-results-list .lab-result-item:nth-of-type(2) {
+  background-color: #f6f6f6;
+}
+
+
+.lab-result-item:hover {
+  background-color: #ededed;
+}
+
+.download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+  .patient-info-card,
+  .lab-results-card {
+    padding: 16px;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+}

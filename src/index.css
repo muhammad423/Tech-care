@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap");
+
+:root {
+  /* Healthcare Colors */
+  --color-primary: #01f0ff;
+  --color-primary-dark: #072635;
+  --color-text-primary: #072635;
+  --color-text-secondary: #707070;
+  --color-border: #ededed;
+  --color-background: #f6f7f8;
+  --color-card-bg: #ffffff;
+  --color-systolic: #c26eb4;
+  --color-diastolic: #7e6cab;
+  --color-respiratory: #e0f3fa;
+  --color-temperature: #ffe6e9;
+  --color-heart: #ffe6f1;
+  --color-status-observation: #ffc6c6;
+  --color-status-cured: #d4f8e1;
+  --color-status-inactive: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
