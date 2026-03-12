@@ -45,7 +45,7 @@ export default function Dashboard() {
     return (
       <div className="loading-container">
         <div className="loading-spinner"></div>
-        <p>Loading patient data...</p>
+        <p>Loading patient data....</p>
       </div>
     )
   }
@@ -53,7 +53,7 @@ export default function Dashboard() {
   if (error) {
     return (
       <div className="error-container">
-        <p>Error: {error}</p>
+        <p>Error:: {error}</p>
       </div>
     )
   }
