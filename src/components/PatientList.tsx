@@ -28,7 +28,7 @@ export default function PatientList({ patients, selectedPatient }: PatientListPr
                 {patient?.gender}, {patient?.age}
               </div>
             </div>
-            <button className="patient-menu">⋯</button>
+            <button className="patient-menu">...</button>
           </div>
         ))}
       </div>
